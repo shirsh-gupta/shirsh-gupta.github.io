@@ -1,0 +1,527 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Shirsh's Portfolio</title>
+    <style>
+        
+        body{
+            background-image: url(background.jpg);
+            
+            background-size: 100%;
+            padding: 0px;
+          
+            text-align: center;
+            justify-content: center;
+        }
+        .page1{
+            color:rgb(255, 255, 255);
+            background-color: rgb(12, 12, 12,0.6);
+            font-size: 50px;
+            border-radius: 25px;
+            
+            text-align: center;
+            margin: 0px;
+            padding: 0px;;
+            justify-content:space-around;
+            font-family:papyrus;
+            
+        }
+        .page2{
+            background-color:rgba(255, 255, 255, 0);
+           
+          padding: 5px;
+            color: rgb(149, 149, 149);
+           margin: 10px;
+            display:flex;
+            justify-content: space-around;
+            font-family: papyrus;
+           
+        }
+       
+        .navi{
+            display: contents;
+            justify-content:space-evenly;
+        }
+.page1:hover{
+    color:  rgb(11, 209, 239);
+    transition: 0.3s;
+}
+.Button{
+ border: 1px;
+
+ margin: 5px;
+ height: 50px;
+ width: 100%;
+ 
+
+ color: #ffffff;
+ width: 100px;
+ font-size:20px;
+ font-family: papyrus;
+ font-weight: bolder;
+ border-radius: 15px;
+background-color: rgba(25, 24, 24, 0.7);
+ }
+ .linkedin{
+ margin: 10px;
+ height: 60px;
+ width:60px;
+ border-radius: 50%;
+box-shadow: #023047 10px;
+}
+ .Button:active{
+ box-shadow:0 0 5px rgb(12, 136, 194),0 0 20px rgb(45, 194, 240), 0 0 30px rgb(36, 241, 241),0 0 150px rgb(213, 255, 255);
+transition: 0.3s;
+ }
+ .Button:hover{
+color: rgb(11, 209, 239);
+
+transition: 0.3s;
+font-weight: bolder;
+}
+.animate {
+ animation: fadeIn 1000ms ease-out backwards;
+ 
+
+
+}
+.animatefirstdiv{
+ animation: fadeIn 800ms ease-out backwards;
+ display:block;
+}
+
+#text{
+margin-bottom: 10px;
+}
+@keyframes fadeIn {
+ from {
+ 
+ opacity: 0;
+
+ 
+ }
+ to {
+ 
+  opacity: 1;
+ 
+
+ }
+}
+
+.info{
+ justify-content: center;
+ background-color: #000000;
+ padding: 15px;
+ padding-left: 20px;
+ margin-top: 10px;
+ margin-left: 10px;
+ margin-right: 10px;
+ margin-bottom: 10px;
+ border-radius: 25px;
+ text-align: left;
+
+ color: #ffffff;
+background-color: rgba(25, 24, 24, 0.7);
+ font-size: 20px;
+
+ display: none;
+}
+.contact{
+    padding: 5px;
+    display: center;
+            font-family: papyrus;
+
+}
+.linkedin:hover{
+    box-shadow:0 0 5px rgb(12, 136, 194),0 0 20px rgb(45, 194, 240), 0 0 30px rgb(36, 241, 241),0 0 150px rgb(213, 255, 255);
+transition: 0.3s;
+
+ }
+.info:hover{
+    color: rgb(11, 209, 239);
+transition: 0.3s;
+
+
+}
+.myheading{
+    font-size: 22px;
+}
+a:link {
+  color: rgb(255, 255, 255);
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:visited {
+  color: rgb(255, 255, 255);
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:hover {
+  color: rgb(11, 209, 239);
+  background-color: transparent;
+  text-decoration: underline;
+}
+
+a:active {
+  color: rgb(255, 255, 255);
+  background-color: transparent;
+  text-decoration: underline;
+}
+    </style>
+</head>
+<body>
+    <div class="page1">
+        Hi...Shirsh here..!
+      
+    </div>
+    <span>
+    <div class="page2">
+        <button onclick="animationedu()" class="Button" id="Edu">Education</button>
+        <button onclick="animationskill()" class="Button" id="Skil">Skills</button>
+        <button onclick="animationexp()" class="Button" id="Wrk">Work</button> 
+        <button class="Button" id="resume"><a style="text-decoration: none"  target="_blank" href="Resume_CyberSecurity v1.2.pdf" download>Resume</a></button>   
+    
+    </div>
+
+    
+    <div class="info" id="grad">
+ 
+        <span>
+        <span class="myheading">Graduation</span>
+         <br>
+         <br>Degree: &nbsp &nbsp&nbsp &nbspBachelor's Of Technology
+         <br>Domain: &nbsp &nbsp&nbsp&nbspElectronics & Communication Engineering
+         <br>University: &nbspDr. A.P.J. Abdul Kalam Technical Universiy, U.P.
+         <br>College:&nbsp &nbsp&nbsp &nbsp Raj Kumar Goel Intitute Of technology, U.P.
+         <br>C.G.P.A: &nbsp &nbsp&nbsp&nbsp8.25
+         <br>Percentage:&nbsp 82.5%
+         <br>
+        <br>
+        </span>
+
+
+
+       
+        
+        </div>
+        <div class="info" id="HSC">
+        <span>
+        <span class="myheading">Higher Secondary</span>
+        <br>
+        <br>School: &nbsp &nbsp &nbsp &nbsp M.P.V.M. Ganga Gurukulam, Prayagraj
+        <br>Percentage: &nbsp88%
+        <br>Subjects: &nbsp &nbsp &nbspMaths, Physics, Chemistry, English, Computer Science
+        
+        </span>
+        </div>
+        <div class="info" id="SSC">
+       
+       
+        <span class="myheading">Senior Secondary</span>
+        <br>
+        <br>School: &nbsp &nbsp &nbsp &nbspM.P.V.M. Ganga Gurukulam, Prayagraj
+        <br>C.G.P.A: &nbsp &nbsp &nbsp9.6
+        <br>Percentage: &nbsp92%
+        <br>Subjects: &nbsp &nbsp &nbspMaths, Science, English, Hindi, Social Science, Information Technology(HTML)
+        
+       </div>
+       <div class="info" id="skill">
+       
+       
+         <span class="myheading">Skills</span>
+         <br>
+         <br>Languages:  &nbsp  &nbsp &nbsp HTML5, CSS3, Javascript, Java, Python3
+         <br> Databases:  &nbsp  &nbsp &nbsp MySQL, MongoDB
+         <br>Technologies:   &nbsp Frontend Development, Data Analytic, Cyber Security
+         <br>Frameworks: &nbsp Bootstrap5, ReactJS, NodeJS
+         <br>Tools: &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp GIT, Github, Eclipse, Microsoft Office
+         <br>Platforms: &nbsp &nbsp &nbsp &nbsp  Linux, Windows, Azure
+         <br>Other Skills: &nbsp &nbsp  Data Analytics, Cyber Security, Programming
+                     
+        </div>
+       
+        <div class="info" id="experience2">
+         <span class="myheading">Infosys ltd.</span>
+         <br>Senior Systems Engineer  &nbsp &nbsp &nbsp Oct. 2022 - Present 
+         <br>
+         <ol type="a">
+          <li>
+            Worked in Infosys CyberSecurity Governance, Risk and Compliance team along with Mercedes Benz & Daimler Trucks <br>security teams on Vulnerability Management & Assessment.
+          </li>
+          <li>
+            Strong knowledge and experience in the areas of security assessment, vulnerability management, risk based threat analysis,<br> security mitigation techniques and tools like Qualys Scanner and Qualys Agent.
+
+          </li>
+          <li>
+            Experience in the information security and/or IT risk management field related to network, host security in <br>Mercedes Benz and Daimler Trucks environment.
+          </li>
+          <li>
+            Experience with vulnerability management tool (Qualys).
+          </li>
+         </ol>
+        </div>
+       
+        <div class="info" id="experience1">
+         <span class="myheading">Infosys ltd.</span>
+         <br>Systems Engineer  &nbsp &nbsp &nbsp Nov. 2020 - Oct. 2022 
+         <br>
+         <ol type="a">
+          <li>
+            Worked in Infosys CyberSecurity team. Created CISO Dashboard using flowcharts, Graphs <br>(Column, Grouped Column, Pie, Line, Spline) and other visuals using SQL and KPI templates<br>(prepared via excel).Infosys internal offering ‘CyberGaze’ was used for generating the visuals on important insights on <br>Compliance and Operational KPIs related to projects. 
+          </li>
+          <li>
+            KPIs included Vulnerability Management, Patch Management, Risk Management, SLA adherence, Software currency, etc.,, 
+          </li>
+          <li>
+            Worked with Vulnerability Management and Governance team. d. Collaborate with executive teams to define client requirement <br>and Project goals.
+          </li>
+         </ol>
+        </div>
+        
+        <div class="page3">
+            <div class="contact">
+                <a href="https://www.linkedin.com/in/shirsh-gupta-31160515a/" target="_blank"><span class="contact"><image class="linkedin" id="linkedin" src='linkedin.png'></image></span></a>
+          <a href="https://github.com/shirsh-gupta/" target="_blank"><span><image class="linkedin" id="github" src='github.jpg'></image></span></a>
+         <a href="mailto:shirshgupta99@gmail.com" target="_blank"><span><image class="linkedin" id="gmail" src='gmail.png'></image></span></a>
+         <a href="https://leetcode.com/shirshgupta/" target="_blank"><span><image class="linkedin" id="leetcode" src='leetcode.png'></image></span></a>
+            </div>
+            
+        </div>   
+      </span>
+        <script>
+            let content = document.getElementById("text");
+             // let myinfo=document.getElementsByClass("");
+            //  let first_div=document.getElementById("Personal");
+              let second_div=document.getElementById("grad");
+              let third_div=document.getElementById("HSC");
+              let fourth_div=document.getElementById("SSC");
+              let fifth_div=document.getElementById("skill");
+              let tenth_div=document.getElementById("experience0")
+              let sixth_div=document.getElementById("experience1");
+              let seventh_div=document.getElementById("experience2");
+              let eigth_div=document.getElementById("Certification1");
+              let ninth_div=document.getElementById("Certification2");
+          // function animationpersonal() {
+            /*let info = `This section provides my Personal Information.`; 
+            let checkmyid = document.getElementById("per"); 
+            console.log(checkmyid);
+            content.innerHTML = info;*/
+           /* if(first_div.style.display=="none"){
+             first_div.style.display="block";
+             second_div.style.display="none";
+               first_div.style.animation="fadeIn";
+           // first_div.sytle.translate="-90%";
+            first_div.style.animationDuration="700ms";
+            third_div.style.display="none";
+           fourth_div.style.display="none";
+           fifth_div.style.display="none";
+           sixth_div.style.display="none";
+           seventh_div.style.display="none";
+           eigth_div.style.display="none";
+           ninth_div.style.diplay="none";
+           tenth_div.style.display="none";
+            }
+            else{
+             first_div.style.display="none";
+            second_div.style.display="none";
+           third_div.style.display="none";
+           fourth_div.style.display="none";
+           fifth_div.style.display="none";
+           sixth_div.style.display="none";
+           seventh_div.style.display="none";
+           eigth_div.style.display="none";
+           ninth_div.style.diplay="none";
+           tenth_div.style.display="none";
+            }
+           
+            content.classList.add("animate");
+            
+           
+            setTimeout(function() {
+             content.classList.remove("animate");
+            }, 500); 
+           }// 500 is the same time as the CSS animation*/
+            function animationedu() {
+           /* let info = `This section provides Education and grades details`; 
+           let checkmyid = document.getElementById("per"); 
+            console.log(checkmyid);
+           content.innerHTML = info;*/
+           if(second_div.style.display=="none"){
+           
+            second_div.style.display="inline-block";
+            second_div.style.animation="fadeIn";
+            second_div.style.animationDuration="700ms";
+           // first_div.style.display="none";
+            third_div.style.display="inline-block";
+            third_div.style.animation="fadeIn";
+            third_div.style.animationDuration="1400ms"; 
+            fourth_div.style.display="inline-block"; 
+            fourth_div.style.animation="fadeIn";
+            fourth_div.style.animationDuration="2100ms";
+            fifth_div.style.display="none";
+            sixth_div.style.display="none";
+            seventh_div.style.display="none";
+            eigth_div.style.display="none";
+            ninth_div.style.diplay="none";
+            tenth_div.style.display="none";
+           }
+            else{
+            second_div.style.display="none";
+           // first_div.style.display="none";
+           third_div.style.display="none";
+            fourth_div.style.display="none";
+            fifth_div.style.display="none";
+            sixth_div.style.display="none";
+            seventh_div.style.display="none";
+            eigth_div.style.display="none";
+            ninth_div.style.diplay="none";
+            tenth_div.style.display="none";
+           
+            }
+           
+            content.classList.add("animate");
+           
+            setTimeout(function() {
+            content.classList.remove("animate"); }, 500);
+           
+           }
+           
+           
+           
+           ////////
+           function animationskill() {
+          /*  let info = `This section provides information on technical Skills`; 
+           let checkmyid = document.getElementById("per"); 
+            console.log(checkmyid);
+           content.innerHTML = info;*/
+           if(fifth_div.style.display=="none"){
+           
+            second_div.style.display="none";
+            
+           // first_div.style.display="none";
+            third_div.style.display="none";
+            fourth_div.style.display="none";
+            sixth_div.style.display="none";
+            seventh_div.style.display="none";
+            fifth_div.style.display="inline-block"; 
+            fifth_div.style.animation="fadeIn";
+            fifth_div.style.animationDuration="700ms";
+            eigth_div.style.display="none";
+            ninth_div.style.diplay="none";
+            tenth_div.style.display="none";
+            
+           }
+            else{
+            second_div.style.display="none";
+          //  first_div.style.display="none";
+           third_div.style.display="none";
+            fourth_div.style.display="none";
+            fifth_div.style.display="none";
+            sixth_div.style.display="none";
+            seventh_div.style.display="none";
+            eigth_div.style.display="none";
+            ninth_div.style.diplay="none";
+            tenth_div.style.display="none";
+            }
+           
+            content.classList.add("animate");
+           
+            setTimeout(function() {
+            content.classList.remove("animate"); }, 500);
+           
+           }
+           function animationexp() {
+           /* let info = `This section provides information on my experience`; 
+           let checkmyid = document.getElementById("per"); 
+            console.log(checkmyid);
+           content.innerHTML = info;*/
+           if(sixth_div.style.display=="none"){
+           
+            second_div.style.display="none";
+            
+           // first_div.style.display="none";
+            third_div.style.display="none";
+            fourth_div.style.display="none";
+           
+            
+            sixth_div.style.display="inline-block"; 
+            fifth_div.style.display="none";
+            sixth_div.style.animation="fadeIn";
+            sixth_div.style.animationDuration="1400ms";
+            seventh_div.style.display="inline-block";
+            seventh_div.style.animation="fadeIn";
+            seventh_div.style.animationDuration="700ms";
+            eigth_div.style.display="none";
+            ninth_div.style.diplay="none";
+            
+           
+           }
+            else{
+            second_div.style.display="none";
+          //  first_div.style.display="none";
+           third_div.style.display="none";
+            fourth_div.style.display="none";
+            sixth_div.style.display="none";
+            fifth_div.style.display="none";
+            seventh_div.style.display="none";
+            eigth_div.style.display="none";
+            ninth_div.style.diplay="none";
+            tenth_div.style.display="none";
+            }
+           
+            content.classList.add("animate");
+           
+            setTimeout(function() {
+            content.classList.remove("animate"); }, 500);
+           
+           }
+           /*function animationCert() {
+           let checkmyid = document.getElementById("per"); 
+            console.log(checkmyid);
+           content.innerHTML = info;
+           if(eigth_div.style.display=="none"){
+           
+            second_div.style.display="none";
+            
+            first_div.style.display="none";
+            third_div.style.display="none";
+            fourth_div.style.display="none";
+            sixth_div.style.display="none"; 
+            fifth_div.style.display="none";
+            
+            seventh_div.style.display="none";
+           
+            eigth_div.style.display="block";
+            eigth_div.style.animation="fadeIn";
+            eigth_div.style.animationDuration="700ms";
+            ninth_div.style.diplay="block";
+            ninth_div.style.animation="fadeIn";
+            ninth_div.style.animationDuration="900ms";
+           }
+            else{
+            second_div.style.display="none";
+            first_div.style.display="none";
+           third_div.style.display="none";
+            fourth_div.style.display="none";
+            sixth_div.style.display="none";
+            fifth_div.style.display="none";
+            seventh_div.style.display="none";
+            eigth_div.style.display="none";
+            ninth_div.style.diplay="none";
+            }
+           
+            content.classList.add("animate");
+           
+            setTimeout(function() {
+            content.classList.remove("animate"); }, 500);
+           
+           }*/
+            </script>
+</body>
+</html>
