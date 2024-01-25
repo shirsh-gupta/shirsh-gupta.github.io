@@ -181,7 +181,7 @@ font-size: 20px;
 
 @media only screen and (max-width: 600px) {
   .nav-links li {
-    font-size: 15px;
+    font-size: 12px;
     
   }
   .navigationbar{
@@ -226,7 +226,7 @@ font-size: 20px;
 
       color: rgb(0, 217, 255);
       
-      transform: scale(1.15);
+      transform: scale(1.1);
       transition: 0.3s;
     }
     .page1 img{
